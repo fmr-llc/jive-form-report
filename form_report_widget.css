@@ -1,0 +1,73 @@
+/*
+Jive - Form Report Widget
+
+Copyright (c) 2015 Fidelity Investments
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+FILE DESCRIPTION
+This is the CSS stylesheet that styles the Form Report widget.
+
+WIDGET DESCRIPTION
+This Jive HTML widget allows the user to set up an analysis report by specifying a saved 
+Form design (using the Form Widget Builder).
+*/
+#fidosreg {
+	string-set: 'b764a0a9536448345dc227af95e192521d337b5e4c3560c859b89ecd0407004a';
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+table {
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	padding: 10px;
+	border: 1px solid #C0C0C0;;
+	color: rgb(110,110,150);
+	font-weight: bold;
+}
+
+th {
+	background-color: #D0D0D0;
+	width: 33%;
+	border: 1px solid #FFFFFF;
+}
+
+td {
+	border: 1px solid #C0C0C0;;
+	text-align: center;
+}
+
+.evenrow td {
+	background-color: #f6f6f6;
+}
+
+.gridOn {
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(100, 100, 100);
+}
+
+#report_export {
+	display: none;
+}
+
+._form_report_processing {
+	display: none;
+}
+
+._form_report_total td {
+	background-color: #D0D0D0;
+	border: 1px solid #FFFFFF;
+}

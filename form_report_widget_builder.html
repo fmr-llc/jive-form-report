@@ -1,0 +1,63 @@
+<!--
+Jive - Form Report Widget
+
+Copyright (c) 2015 Fidelity Investments
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+FILE DESCRIPTION
+This is the Javascript library that drives the Form Report Builder app.
+
+WIDGET DESCRIPTION
+This Jive HTML widget allows the user to set up an analysis report by specifying a saved 
+Form design (using the Form Widget Builder).
+-->
+<meta name="fidosreg" content="b764a0a9536448345dc227af95e192521d337b5e4c3560c859b89ecd0407004a">
+
+<script src='JQUERY'></script>
+<script>
+
+var jquery_content_id = "0";
+var library_loader_content_id = "0";
+
+var $j = jQuery.noConflict();
+$j("head").append('<scr'+'ipt src="/api/core/v3/attachments/file/' + library_loader_content_id + '/data"></scr'+'ipt>');
+</script>
+<script>
+$j.load_library('bootstrap.css');
+$j.load_library('bootstrap-theme.css');
+$j.load_library('form_report_widget_builder.css');
+$j.load_library('bootstrap.js');
+$j.load_library('form_report_widget_builder.js');
+</script>
+
+<div id='_formreport_mainFrame' class="_formreport_mainFrame form-horizontal">
+
+	<legend id="_formreport_title" class="text-center">Form Report Builder</legend>
+
+	<div id="_formreport_load">
+		<legend id="editbox_title" class="text-center">Select form design...</legend>
+		<div id="_formreport_load_designs" class='list-group'></div>
+		<div class="control-group text-center">
+			<button id="_formreport_load_prev" name="_formreport_load_prev" class="btn btn-default _formreport_formcontrols_button" onclick="_formreport_prev_designs();" disabled>Previous Page</button>
+			<button id="_formreport_load_load" name="_formreport_load_load" class="btn btn-default _formreport_formcontrols_button" onclick="_formreport_load_design();">Load</button>
+			<button id="_formreport_load_next" name="_formreport_load_next" class="btn btn-default _formreport_formcontrols_button" onclick="_formreport_next_designs();" disabled>Next Page</button>
+		</div>
+	</div>
+
+	<div id="_formreport_code">
+		<textarea id="code"></textarea>
+		<button id="_formreport_code_hide" name="_formreport_code_hide" class="btn btn-default" onclick="_formreport_hideCode();">Hide Code</button>
+	</div>
+
+</div>
+

@@ -1,0 +1,85 @@
+/*
+Jive - Form Report Widget
+
+Copyright (c) 2015 Fidelity Investments
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+FILE DESCRIPTION
+This is the CSS stylesheet that styles the Form Report Builder app.
+
+WIDGET DESCRIPTION
+This Jive HTML widget allows the user to set up an analysis report by specifying a saved 
+Form design (using the Form Widget Builder).
+*/
+#fidosreg {
+	string-set: 'b764a0a9536448345dc227af95e192521d337b5e4c3560c859b89ecd0407004a';
+}
+
+._formreport_mainFrame {
+	background-color: rgb(242, 242, 242);
+	border-radius: 5px 5px 5px 5px; 
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(187, 187, 187) rgb(187, 187, 187) rgb(218, 218, 218);
+	padding: 10px;
+}
+
+.design-deleted {
+	background-color: rgb(242, 200, 200);
+}
+
+._formreport_mainFrame label {
+	padding-right: 10px;
+}
+
+._formreport_formcontrols_button {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#_formreport_load {
+	border-radius: 5px 5px 5px 5px; 
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	padding: 4px;
+	margin: 4px;
+}
+
+#_formreport_showCode {
+	display: none;
+	position: relative;
+	width: 100%;
+	background-color: rgb(242, 242, 242);
+	padding: 4px;
+	margin: 4px;
+	text-align: center;
+}
+
+#_formreport_code {
+	display: none;
+	border-radius: 5px 5px 5px 5px; 
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	padding: 4px;
+	margin: 4px;
+}
+
+#_formreport_code #code {
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+
+#_formreport_code_format {
+	display: none;
+}

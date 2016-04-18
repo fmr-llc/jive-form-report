@@ -90,7 +90,7 @@ Your Form Report Builder is now set up.  Site admins can use the below instructi
 Build the Form Report
 ---------------------
 * The starting screen displays a list of form designs you have access.
-<p><img src="docs/form-report-widget-builder.jpg" /></p>
+  <p><img src="docs/form-report-widget-builder.jpg" /></p>
   Select the desired form design, and click Load.  The builder will verify that at least one tag has been configured on the form, or display an error if none exist.
 * The code for the form report will be generated.  Copy the code.
 * Go to the overview page you want to put the form report.
